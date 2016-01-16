@@ -15,9 +15,9 @@ set update = searchResult.Updates.Item(i)
 For j = LBound(hideupdates) To UBound(hideupdates) 
 'MsgBox hideupdates(j)
 if instr(1, update.Title, hideupdates(j), vbTextCompare) = 0 then
-  'Wscript.echo "No match found for " &amp; hideupdates(j)
+  'Wscript.echo "No match found for " & hideupdates(j)
 else
-Wscript.echo "Hiding " &amp; hideupdates(j)
+Wscript.echo "Hiding " & hideupdates(j)
 update.IsHidden = True
 end if
 Next
